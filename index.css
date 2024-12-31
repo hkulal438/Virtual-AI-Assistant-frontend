@@ -1,0 +1,65 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: black;
+}
+.styled-image {
+    display: block; /* Center alignment */
+    max-width: 300px; /* Smaller image size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Center the image vertically and horizontally */
+    border: 5px solid #ccc; /* Adds a border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+    transition: transform 0.5s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Adds smooth animation */
+  }
+  
+  .styled-image:hover {
+    transform: scale(1.05) rotate(10deg); /* Zoom and rotate effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensify shadow */
+    border-color: #007BFF; /* Change border color */
+  }
+  
+  
+  
+
+.btn-box{
+    background-image: url(ai-1.gif);
+    width: 320px;
+    height: 320px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: white;
+    padding: 13px;
+    border: 5px solid #008CF7;
+    border-radius: 50%;
+    font-size: 80px;
+    color: #008CF7;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 140, 247, 0.7), 
+        0 0 30px rgba(0, 140, 247, 0.5), 
+        0 0 45px rgba(0, 140, 247, 0.3);
+}
+
+button:hover {
+    box-shadow: 0 0 25px rgba(0, 140, 247, 1), 
+        0 0 50px rgba(0, 140, 247, 0.7), 
+        0 0 75px rgba(0, 140, 247, 0.5);
+    transform: scale(1.05);
+}
